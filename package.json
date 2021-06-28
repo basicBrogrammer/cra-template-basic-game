@@ -1,0 +1,26 @@
+{
+	"name": "cra-template-basic-game",
+	"version": "0.0.1",
+	"keywords": [
+		"react",
+		"create-react-app",
+		"template",
+		"games"
+	],
+	"description": "CRA template for creating a basic arcade game.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/basicBrogrammer/cra-template-basic-game.git"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": ">=10"
+	},
+	"bugs": {
+		"url": "https://github.com/basicBrogrammer/cra-template-basic-game"
+	},
+	"files": [
+		"template",
+		"template.json"
+	]
+}
