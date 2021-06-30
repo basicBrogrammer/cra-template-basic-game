@@ -1,19 +1,27 @@
 import "./App.css";
+import GameContext from "./GameContext";
+import { initialState, reducer } from "./state";
+
+const Header = () => {
+  return (
+    <header className='header'>
+      <p>React Game</p>
+      <p>Score: (TBD)</p>
+      <button>Play</button>
+    </header>
+  );
+};
 
 function App() {
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <p>React Game</p>
-        <p>Score: (TBD)</p>
-        <button>Play</button>
-      </header>
-      <main className='App-main'>
-        <div>
+    <GameContext initialState={initialState} reducer={reducer}>
+      <Header />
+      <main className='main'>
+        <div className='board'>
           <p>Hello World</p>
         </div>
       </main>
-    </div>
+    </GameContext>
   );
 }
 
