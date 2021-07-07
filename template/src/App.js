@@ -1,5 +1,5 @@
 import "./App.css";
-import GameContext from "./GameContext";
+import GameContext, { useGameState } from "./GameContext";
 import { initialState, reducer } from "./state";
 
 const Header = () => {
@@ -11,6 +11,16 @@ const Header = () => {
     </header>
   );
 };
+fs;
+const GameOverBanner = () => {
+  const { status } = useGameState();
+
+  return status === "ENDED" ? (
+    <div className='game-over'>
+      <p>GAME OVER</p>
+    </div>
+  ) : null;
+};
 
 function App() {
   return (
@@ -18,6 +28,7 @@ function App() {
       <Header />
       <main className='main'>
         <div className='board'>
+          <GameOverBanner />
           <p>Hello World</p>
         </div>
       </main>
