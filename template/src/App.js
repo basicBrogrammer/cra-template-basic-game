@@ -11,7 +11,7 @@ const Header = () => {
     </header>
   );
 };
-fs;
+
 const GameOverBanner = () => {
   const { status } = useGameState();
 
